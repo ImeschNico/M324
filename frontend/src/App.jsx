@@ -119,7 +119,7 @@ function App() {
             <option value="Mittel">Mittel</option>
             <option value="Tief">Tief</option>
           </select>
-          <button type="submit">Absenden</button>
+          <button type="submit">Task hinzufügen</button>
         </form>
         <div>{renderTasks(todos)}</div>
       </header>
