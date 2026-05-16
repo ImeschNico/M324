@@ -107,6 +107,7 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <h1>ToDo Liste</h1>
+        <h1>Meine Aufgaben</h1>
         <form onSubmit={handleSubmit} className="todo-form">
           <label htmlFor="taskdescription">Neues Todo anlegen:</label>
           <input type="text" value={taskdescription} onChange={handleChange} />
@@ -119,7 +120,7 @@ function App() {
             <option value="Mittel">Mittel</option>
             <option value="Tief">Tief</option>
           </select>
-          <button type="submit">Absenden</button>
+          <button type="submit">Task hinzufügen</button>
         </form>
         <div>{renderTasks(todos)}</div>
       </header>
