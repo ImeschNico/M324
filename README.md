@@ -1,3 +1,4 @@
+Sidequest 6A
 ## Pipeline
 
 Wir haben unsere Pipeline zuerst so erstellt, dass wir sie mit commits testen konnten. Als dies geklappt hat haben wir den Trigger auf Pull Request umgestellt in dem wir die Zeile 
