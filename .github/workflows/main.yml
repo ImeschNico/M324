@@ -23,7 +23,7 @@ jobs:
 
       - uses: actions/upload-artifact@v4
         with:
-          name: frontend-build
+          name: frontend-artifact
           path: frontend/build
 
   backend:
@@ -45,5 +45,5 @@ jobs:
 
       - uses: actions/upload-artifact@v4
         with:
-          name: backend-war
+          name: backend-artifact
           path: backend/target/*.war
