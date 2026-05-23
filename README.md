@@ -168,3 +168,6 @@ Kommentaren vor allem in App.js zu finden.
 
 (Ausgaben für white-box debugging sind bereits auf den beiden Server vorhanden)
 
+## Änderung von Thierno
+
+Diese Änderung wurde für den Pull-Request-Test hinzugefügt.
