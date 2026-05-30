@@ -10,7 +10,7 @@ function App() {
   const handleSubmit = (event) => {
     event.preventDefault();
 
-    fetch("http://localhost:8080/tasks", {
+    fetch("http://localhost:8080/api/v1/tasks", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -36,7 +36,7 @@ function App() {
   };
 
   useEffect(() => {
-    fetch("http://localhost:8080/")
+    fetch("http://localhost:8080/api/v1/tasks")
       .then((response) => response.json())
       .then((data) => {
         setTodos(data);
@@ -44,7 +44,7 @@ function App() {
   }, []);
 
   const handleDelete = (event, taskdescription) => {
-    fetch("http://localhost:8080/delete", {
+    fetch("http://localhost:8080/api/v1/delete", {
       method: "POST",
       body: JSON.stringify({ taskdescription: taskdescription }),
       headers: {
